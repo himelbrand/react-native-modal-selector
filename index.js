@@ -16,6 +16,7 @@ import {
 
 import styles from './style';
 import BaseComponent from './BaseComponent';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
@@ -182,7 +183,7 @@ export default class ModalSelector extends BaseComponent {
         }
         return (
             <View style={[styles.selectStyle, this.props.selectStyle]}>
-                <Text style={[styles.selectTextStyle, this.props.selectTextStyle]}>{this.state.selected}</Text>
+                <Text style={[styles.selectTextStyle, this.props.selectTextStyle]}>{this.state.selected} {this.props.data.length > 1 ? <MaterialCommunityIcons name='chevron-down' style={this.props.selectTextStyle}/> : ''}</Text>
             </View>
         );
     }
