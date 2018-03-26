@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peacechen/react-native-modal-selector.git"
+    "url": "git+https://github.com/himelbrand/react-native-modal-selector.git""
   },
   "keywords": [
     "react-native",
