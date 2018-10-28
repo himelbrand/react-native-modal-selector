@@ -183,7 +183,7 @@ export default class ModalSelector extends BaseComponent {
         }
         return (
            <View style={[styles.selectStyle, this.props.selectStyle]}>
-            {this.props.data.length > 1 && <View style={{position:'absolute',right:10,zIndex:1,top:'50%'}}><MaterialCommunityIcons name='chevron-down' style={this.props.selectIconStyle}/></View>}
+            {this.props.data.length > 1 && <View style={{position:'absolute',right:5,zIndex:1,top:'50%'}}><MaterialCommunityIcons name='chevron-down' style={this.props.selectIconStyle}/></View>}
                 <Text style={[styles.selectTextStyle, this.props.selectTextStyle,this.props.data.length <= 1 ? {alignSelf:'center'} : {}]}>{this.state.selected}</Text>
             </View>
         );
